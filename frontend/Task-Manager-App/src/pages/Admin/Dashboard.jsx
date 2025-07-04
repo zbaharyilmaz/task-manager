@@ -2,6 +2,7 @@
 const Dashboard = () => {
   return (
     <div>
+      Admin Dashboard Page
     </div>
   );
 };
