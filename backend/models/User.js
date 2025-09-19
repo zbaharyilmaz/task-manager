@@ -14,7 +14,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    profileImage: {
+    role: {
       type: String,
       enum: ["admin", "member"], // Role-based access control
       default: "member",
@@ -24,5 +24,5 @@ const UserSchema = new mongoose.Schema(
     timestamps: true, // Automatically manage createdAt and updatedAt fields
   }
 );
-const User= mongoose.model("User", UserSchema);
-module.exports= User;
+const User = mongoose.model("User", UserSchema);
+module.exports = User;
