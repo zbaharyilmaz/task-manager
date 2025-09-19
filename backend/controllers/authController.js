@@ -10,7 +10,7 @@ const generateToken = (userId) => {
 
 const registerUser = async (req, res) => {
   try {
-    const { name, email, password, role = "admin" } = req.body;
+    const { name, email, password, role = "user" } = req.body;
 
     // Check if user already exists
     const existingUser = await User.findOne({ email });
